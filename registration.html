@@ -1,0 +1,132 @@
+<!-- Muhammad Taha Nafis
+     22P-9299     -->
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        Task 1
+    </title>
+    <meta charset="UTF-16" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form action="" method="POST">
+        <div>
+            <label for="full-name">Full Name: </label>
+            <input type="text" name="full-name" id="full-name" placeholder="Enter your full name" maxlength="30" required/>
+        </div>
+
+        <div>
+            <label for="email-address">Email Address: </label>
+            <input type="email" name="email-address" id="email-address" placeholder="Enter your email address" required />
+        </div>
+
+        <div>
+            <label for="password">Enter Password: </label>
+            <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="The password should atleast have one digit,one lowercase letter, one uppercase letter and it should be atleast 8 characters long." required />
+        </div>
+
+        <div>
+            <label for="date-of-birth">Enter your date of birth: </label>
+            <input type="date" name="date-of-birth" id="date-of-birth" />
+        </div>
+
+        <div>
+            <label for="month-of-interest">Enter the month you are interested to learn in: </label>
+            <input type="month" name="month-of-interest" id="month-of-interest" min="2025-02" max="2025-06"/>
+        </div>
+
+        <div>
+            <label for="number-of-courses"></label>
+            <input type="number" name="number-of-courses" id="number-of-courses" max="10"/>
+        </div>
+
+        <div>
+            <label for="skill-level">Skill level</label>
+            <input type="range" name="skill-level" id="skill-level" min="1" max="10" value="1" list="values" />
+                  </div>
+
+        <div>
+            <label for="search-preference">Search for desired input: </label>
+            <input type="search" name="search-preference" id="search-preference" />
+            <button>Search</button>
+        </div>
+
+        <div>
+            <label class="radio-btn-label" for="gender">Specify your gender</label>
+            <div>
+                <input type="radio" name="male" id="male" required>
+                <label for="male">Male</label>
+            </div>
+
+            <div>
+                <input type="radio" name="female" id="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div>
+            <label class="check-box-label" for="preferred-learning-style">How do you prefer to learn?</label>
+            <div>
+                <input type="checkbox" name="visual" id="visual">
+                <label for="visual">Visual</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="auditory" id="auditory">
+                <label for="auditory">Auditory</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="kinesthetic" id="kinesthetic">
+                <label for="kinesthetic">Kinestthetic</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="Country">Country</label>
+            <input list="countries" required />
+            
+            <datalist id="countries">
+                <option value="Pakistan"></option>
+                <option value="India"></option>
+                <option value="Srilanka"></option>
+                <option value="Afghanistan"></option>
+                <option value="Bangladesh"></option>
+            </datalist>
+        </div>
+
+      <div>
+        <label for="additional-comments">Do you want to say something?</label>
+        <br/>
+        <textarea name="additional-comments" id="additional-comments"></textarea>
+      </div>       
+        
+      <div>
+        <label for="progress-bar">Progress:</label>
+        <progress id="progress-bar" max="100" value="70%">70%</progress>
+      </div>
+
+      <div>
+        <label for="favourite-colour">Pick your favourite colour: </label>
+        <input type="color" name="favourite-colour" id="favourite-colour" />
+      </div>
+      
+      <div>
+        <a href="mailto:tahanafis0@gmail.com">Email</a>
+        <a href="tel:+923349395240">Phone Number</a>
+      </div>
+
+      <div>
+        <input type="submit">
+        <input type="reset">
+     </div>
+
+    </form>
+</body>
+
+</html>
